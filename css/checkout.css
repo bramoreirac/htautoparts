@@ -1,0 +1,392 @@
+/* ============================================================
+   HTAutoParts
+   CHECKOUT.CSS
+   Styles specific to checkout.html
+============================================================ */
+
+
+/* ============================================================
+   CHECKOUT SECTION
+============================================================ */
+
+.checkout-section{
+
+    padding: 4rem 0;
+
+}
+
+.checkout-layout{
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 2rem;
+
+    align-items: start;
+
+}
+
+
+/* ============================================================
+   CHECKOUT FORM
+============================================================ */
+
+.checkout-form{
+
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.checkout-form h2{
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/* ============================================================
+   FORM LAYOUT
+============================================================ */
+
+.form-row{
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 1rem;
+
+}
+
+.form-group{
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.form-group label{
+
+    font-weight: 600;
+
+    margin-bottom: .5rem;
+
+    color: var(--text-dark);
+
+}
+
+
+/* ============================================================
+   INPUTS
+============================================================ */
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    padding: .9rem 1rem;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    transition: var(--transition-fast);
+
+    background: var(--white);
+
+}
+
+.form-group textarea{
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color: var(--primary-color);
+
+    outline: none;
+
+    box-shadow: 0 0 0 3px rgba(181,93,52,.15);
+
+}
+
+
+/* ============================================================
+   PAYMENT
+============================================================ */
+
+.payment-title{
+
+    margin-top: 2rem;
+
+}
+
+.payment-options{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    margin: 1.5rem 0 2rem;
+
+}
+
+.payment-option{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .85rem;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+
+}
+
+.payment-option:hover{
+
+    border-color: var(--primary-color);
+
+    background: var(--surface-color);
+
+}
+
+.payment-option input{
+
+    accent-color: var(--primary-color);
+
+}
+
+.payment-option i{
+
+    color: var(--primary-color);
+
+    width: 22px;
+
+    text-align: center;
+
+}
+
+
+/* ============================================================
+   COMPLETE PURCHASE BUTTON
+============================================================ */
+
+.checkout-btn{
+
+    width: 100%;
+
+    justify-content: center;
+
+}
+
+
+/* ============================================================
+   ORDER SUMMARY
+============================================================ */
+
+.checkout-summary{
+
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    position: sticky;
+
+    top: 100px;
+
+}
+
+.checkout-summary h2{
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/* ============================================================
+   PRODUCT LIST
+============================================================ */
+
+.summary-products{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.summary-product{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.summary-product h4{
+
+    font-size: .95rem;
+
+    margin-bottom: .25rem;
+
+}
+
+.summary-product small{
+
+    color: var(--text-light);
+
+}
+
+
+/* ============================================================
+   TOTALS
+============================================================ */
+
+.summary-item,
+
+.summary-total{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+}
+
+.summary-total{
+
+    font-size: 1.25rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+}
+
+.checkout-summary hr{
+
+    margin: 1.5rem 0;
+
+    border: none;
+
+    border-top: 1px solid var(--border-color);
+
+}
+
+
+/* ============================================================
+   SECURE CHECKOUT
+============================================================ */
+
+.secure-checkout{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .75rem;
+
+    margin-top: 2rem;
+
+    padding: 1rem;
+
+    background: var(--surface-color);
+
+    border-radius: var(--radius-md);
+
+    color: #2e7d32;
+
+    font-weight: 600;
+
+}
+
+.secure-checkout i{
+
+    font-size: 1.2rem;
+
+}
+
+
+/* ============================================================
+   ANIMATION
+============================================================ */
+
+.checkout-form,
+
+.checkout-summary{
+
+    animation: fadeCheckout .7s ease;
+
+}
+
+@keyframes fadeCheckout{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

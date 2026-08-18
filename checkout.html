@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!--                     META INFORMATION                      -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | HTAutoParts</title>
+
+    <meta name="description" content="Complete your HTAutoParts purchase securely.">
+
+    <!-- ========================================================= -->
+    <!--                    GOOGLE FONTS                           -->
+    <!-- ========================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!--                    FONT AWESOME                           -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================================= -->
+    <!--                      CSS FILES                            -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!--                         HEADER                            -->
+    <!-- ========================================================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <span>HTAutoParts</span>
+
+            </a>
+
+            <nav class="navigation">
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="catalog.html">Catalog</a></li>
+
+                    <li><a href="#">Compatibility</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-search">
+
+                <input type="text" placeholder="Search parts...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!--                    CHECKOUT HERO                          -->
+    <!-- ========================================================= -->
+
+    <section class="catalog-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container catalog-hero-content">
+
+            <h1>Checkout</h1>
+
+            <p>
+
+                Complete your order by providing your billing information.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                     BREADCRUMB                            -->
+    <!-- ========================================================= -->
+
+    <nav class="breadcrumb">
+
+        <div class="container">
+
+            <a href="index.html">Home</a>
+
+            <span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </span>
+
+            <a href="cart.html">
+
+                Shopping Cart
+
+            </a>
+
+            <span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </span>
+
+            <span>
+
+                Checkout
+
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!--                    CHECKOUT SECTION                       -->
+    <!-- ========================================================= -->
+
+    <section class="checkout-section">
+
+        <div class="container">
+
+            <div class="checkout-layout">
+
+                <!-- ========================================================= -->
+                <!--                  BILLING INFORMATION                      -->
+                <!-- ========================================================= -->
+
+                <div class="checkout-form">
+
+                    <h2>Billing Information</h2>
+
+                    <form action="#" method="post">
+
+                        <!-- ================================================ -->
+                        <!--                 NAME ROW                         -->
+                        <!-- ================================================ -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="firstName">
+
+                                    First Name
+
+                                </label>
+
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="lastName">
+
+                                    Last Name
+
+                                </label>
+
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--                    EMAIL                         -->
+                        <!-- ================================================ -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--                    PHONE                         -->
+                        <!-- ================================================ -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+
+                                Phone Number
+
+                            </label>
+
+                            <input type="tel" id="phone" name="phone" placeholder="+505 8888 8888" required>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--              COUNTRY / CITY                      -->
+                        <!-- ================================================ -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="country">
+
+                                    Country
+
+                                </label>
+
+                                <select id="country" name="country" required>
+
+                                    <option value="">Select Country</option>
+
+                                    <option>Nicaragua</option>
+
+                                    <option>Costa Rica</option>
+
+                                    <option>Honduras</option>
+
+                                    <option>El Salvador</option>
+
+                                    <option>Guatemala</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="city">
+
+                                    City
+
+                                </label>
+
+                                <input type="text" id="city" name="city" placeholder="Managua" required>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--                  ZIP CODE                        -->
+                        <!-- ================================================ -->
+
+                        <div class="form-group">
+
+                            <label for="zipCode">
+
+                                ZIP / Postal Code
+
+                            </label>
+
+                            <input type="text" id="zipCode" name="zipCode" placeholder="00000">
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--                 ADDRESS                          -->
+                        <!-- ================================================ -->
+
+                        <div class="form-group">
+
+                            <label for="address">
+
+                                Street Address
+
+                            </label>
+
+                            <textarea id="address" name="address" rows="4" placeholder="Enter your complete address..."
+                                required></textarea>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--              PAYMENT METHOD                      -->
+                        <!-- ================================================ -->
+
+                        <h2 class="payment-title">
+
+                            Payment Method
+
+                        </h2>
+
+                        <div class="payment-options">
+
+                            <label class="payment-option">
+
+                                <input type="radio" name="payment" value="credit-card" checked>
+
+                                <i class="fas fa-credit-card"></i>
+
+                                Credit Card
+
+                            </label>
+
+                            <label class="payment-option">
+
+                                <input type="radio" name="payment" value="paypal">
+
+                                <i class="fab fa-paypal"></i>
+
+                                PayPal
+
+                            </label>
+
+                            <label class="payment-option">
+
+                                <input type="radio" name="payment" value="cash">
+
+                                <i class="fas fa-money-bill-wave"></i>
+
+                                Cash on Delivery
+
+                            </label>
+
+                        </div>
+
+                        <!-- ================================================ -->
+                        <!--                COMPLETE ORDER                    -->
+                        <!-- ================================================ -->
+
+                        <button type="submit" class="btn btn-primary checkout-btn">
+
+                            <i class="fas fa-lock"></i>
+
+                            Complete Purchase
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- ========================================================= -->
+                <!--                     ORDER SUMMARY                         -->
+                <!-- ========================================================= -->
+
+                <aside class="checkout-summary">
+
+                    <h2>Order Summary</h2>
+
+                    <!-- ================================================ -->
+                    <!--               PRODUCTS SUMMARY                   -->
+                    <!-- ================================================ -->
+
+                    <div class="summary-products">
+
+                        <div class="summary-product">
+
+                            <div>
+
+                                <h4>Front Brake Pads</h4>
+
+                                <small>Qty: 1</small>
+
+                            </div>
+
+                            <span>$84.99</span>
+
+                        </div>
+
+                        <div class="summary-product">
+
+                            <div>
+
+                                <h4>Premium Oil Filter</h4>
+
+                                <small>Qty: 2</small>
+
+                            </div>
+
+                            <span>$29.98</span>
+
+                        </div>
+
+                        <div class="summary-product">
+
+                            <div>
+
+                                <h4>Timing Belt Kit</h4>
+
+                                <small>Qty: 1</small>
+
+                            </div>
+
+                            <span>$154.99</span>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- ================================================ -->
+                    <!--                  TOTALS                          -->
+                    <!-- ================================================ -->
+
+                    <div class="summary-item">
+
+                        <span>Items</span>
+
+                        <span id="checkoutItems">
+
+                            4
+
+                        </span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Subtotal</span>
+
+                        <span id="checkoutSubtotal">
+
+                            $269.96
+
+                        </span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Shipping</span>
+
+                        <span>
+
+                            $15.00
+
+                        </span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Estimated Tax</span>
+
+                        <span>
+
+                            $28.50
+
+                        </span>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <span id="checkoutTotal">
+
+                            $313.46
+
+                        </span>
+
+                    </div>
+
+                    <div class="secure-checkout">
+
+                        <i class="fas fa-shield-alt"></i>
+
+                        <span>
+
+                            Secure SSL Protected Checkout
+
+                        </span>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                         FOOTER                            -->
+    <!-- ========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h3>HTAutoParts</h3>
+
+                <p>
+
+                    Your trusted supplier of premium Honda and Toyota auto parts,
+                    delivering quality products with reliable customer service.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="catalog.html">Catalog</a></li>
+
+                    <li><a href="product.html">Products</a></li>
+
+                    <li><a href="cart.html">Shopping Cart</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Customer Support -->
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+
+                    <li><a href="#">Support Center</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-x-twitter"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 HTAutoParts. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!--                     JAVASCRIPT                            -->
+    <!-- ========================================================= -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

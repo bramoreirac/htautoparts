@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!--                     META INFORMATION                      -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | HTAutoParts</title>
+
+    <meta name="description" content="View detailed information about Honda and Toyota auto parts.">
+
+    <!-- ========================================================= -->
+    <!--                    GOOGLE FONTS                           -->
+    <!-- ========================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!--                    FONT AWESOME                           -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================================= -->
+    <!--                      CSS FILES                            -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!--                         HEADER                             -->
+    <!-- ========================================================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <span>HTAutoParts</span>
+
+            </a>
+
+            <nav class="navigation">
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="catalog.html" class="active">Catalog</a></li>
+                    <li><a href="#">Compatibility</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-search">
+
+                <input type="text" placeholder="Search parts...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!--                    PRODUCT HERO                            -->
+    <!-- ========================================================= -->
+
+    <section class="catalog-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container catalog-hero-content">
+
+            <h1>Product Details</h1>
+
+            <p>
+
+                View complete specifications and compatibility information.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                     BREADCRUMB                             -->
+    <!-- ========================================================= -->
+
+    <nav class="breadcrumb">
+
+        <div class="container">
+
+            <a href="index.html">
+
+                Home
+
+            </a>
+
+            <span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </span>
+
+            <a href="catalog.html">
+
+                Catalog
+
+            </a>
+
+            <span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </span>
+
+            <span id="breadcrumbProduct">
+
+                Product
+
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!--                  PRODUCT INFORMATION                       -->
+    <!-- ========================================================= -->
+
+    <section class="product-section">
+
+        <div class="container">
+
+            <div class="product-layout">
+
+                <!-- ================================================ -->
+                <!--                 PRODUCT IMAGE                     -->
+                <!-- ================================================ -->
+
+                <div class="product-gallery">
+
+                    <img id="productImage" src="images/products/brake-pad.jpg" alt="Honda Front Brake Pads">
+
+                </div>
+
+                <!-- ================================================ -->
+                <!--                PRODUCT DETAILS                    -->
+                <!-- ================================================ -->
+
+                <div class="product-details">
+
+                    <span class="product-brand" id="productBrand">
+
+                        Honda Genuine Parts
+
+                    </span>
+
+                    <h2 id="productName">
+
+                        Front Brake Pads
+
+                    </h2>
+
+                    <!-- Rating -->
+
+                    <div class="product-rating">
+
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                        <span>(4.8 / 5)</span>
+
+                    </div>
+
+                    <!-- Price -->
+
+                    <h3 class="product-price" id="productPrice">
+
+                        $84.99
+
+                    </h3>
+
+                    <!-- Availability -->
+
+                    <p class="stock-status">
+
+                        <i class="fas fa-circle-check"></i>
+
+                        In Stock
+
+                    </p>
+
+                    <!-- Compatibility -->
+
+                    <div class="compatibility">
+
+                        <h3>Compatible with:</h3>
+
+                        <ul id="compatibilityList">
+
+                            <li>Honda Civic</li>
+
+                            <li>Honda Accord</li>
+
+                            <li>Honda CR-V</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-selector">
+
+                        <label for="quantity">
+
+                            Quantity
+
+                        </label>
+
+                        <div class="quantity-box">
+
+                            <button type="button" id="decreaseQty">
+
+                                -
+
+                            </button>
+
+                            <input id="quantity" type="number" value="1" min="1">
+
+                            <button type="button" id="increaseQty">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="product-buttons">
+
+                        <button class="btn btn-primary">
+
+                            <i class="fas fa-cart-shopping"></i>
+
+                            Add to Cart
+
+                        </button>
+
+                        <button class="btn btn-secondary">
+
+                            <i class="far fa-heart"></i>
+
+                            Add to Wishlist
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                PRODUCT DESCRIPTION                         -->
+    <!-- ========================================================= -->
+
+    <section class="product-description-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Product Description</h2>
+
+                <p>
+
+                    Everything you need to know about this product.
+
+                </p>
+
+            </div>
+
+            <div class="description-content">
+
+                <p id="productDescription">
+
+                    The Honda Genuine Front Brake Pads are engineered to provide
+                    exceptional braking performance, reduced noise, and long-lasting
+                    durability. Manufactured with high-quality ceramic materials,
+                    these brake pads deliver reliable stopping power while minimizing
+                    brake dust and rotor wear.
+
+                </p>
+
+                <p>
+
+                    Designed specifically for Honda vehicles, this product ensures
+                    a precise fit and dependable performance under both daily driving
+                    conditions and extended highway use.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--              TECHNICAL SPECIFICATIONS                      -->
+    <!-- ========================================================= -->
+
+    <section class="product-specifications">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Technical Specifications</h2>
+
+                <p>
+
+                    Product information and compatibility.
+
+                </p>
+
+            </div>
+
+            <div class="specifications-table">
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th>Manufacturer</th>
+
+                            <td id="manufacturer">
+
+                                Honda Genuine Parts
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Category</th>
+
+                            <td id="category">
+
+                                Brake System
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Material</th>
+
+                            <td id="material">
+
+                                Ceramic Composite
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Vehicle Compatibility</th>
+
+                            <td id="compatibility">
+
+                                Honda Civic • Honda Accord • Honda CR-V
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Warranty</th>
+
+                            <td id="warranty">
+
+                                12 Months Manufacturer Warranty
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Condition</th>
+
+                            <td>
+
+                                Brand New
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Availability</th>
+
+                            <td>
+
+                                In Stock
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Estimated Delivery</th>
+
+                            <td>
+
+                                3-5 Business Days
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                         FOOTER                            -->
+    <!-- ========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Company Information -->
+
+            <div class="footer-column">
+
+                <h3>HTAutoParts</h3>
+
+                <p>
+
+                    Your trusted supplier of premium Honda and Toyota auto parts.
+                    We provide reliable components, competitive prices, and excellent
+                    customer service.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="catalog.html">Catalog</a></li>
+
+                    <li><a href="cart.html">Shopping Cart</a></li>
+
+                    <li><a href="checkout.html">Checkout</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Customer Support -->
+
+            <div class="footer-column">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">FAQ</a></li>
+
+                    <li><a href="#">Support Center</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social Media -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 HTAutoParts. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!--                     JAVASCRIPT                            -->
+    <!-- ========================================================= -->
+
+    <script src="js/products.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,586 @@
+/* ============================================================
+   HTAutoParts
+   COMPONENTS.CSS
+============================================================ */
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:var(--surface-color);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:var(--navbar-height);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.75rem;
+
+    font-size:1.6rem;
+
+    font-family:var(--font-heading);
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+}
+
+.navigation ul{
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+.navigation a{
+
+    position: relative;
+
+    font-weight: 500;
+
+    padding-bottom: .25rem;
+
+    transition: var(--transition-fast);
+
+}
+
+.navigation a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transition: width .3s ease;
+
+}
+
+.navigation a:hover::after,
+
+.navigation .active::after{
+
+    width: 100%;
+
+}
+
+/* ============================================================
+   SEARCH BAR
+============================================================ */
+
+.nav-search{
+
+    display:flex;
+
+}
+
+.nav-search input{
+
+    width:220px;
+
+    padding:.75rem 1rem;
+
+    border:1px solid var(--border-color);
+
+    border-right:none;
+
+    border-radius:8px 0 0 8px;
+
+}
+
+.nav-search button{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    padding:0 1rem;
+
+    border-radius:0 8px 8px 0;
+
+}
+
+.hero-search{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:2rem 0;
+
+}
+
+.hero-search input{
+
+    width:500px;
+
+    padding:1rem;
+
+    border-radius:8px 0 0 8px;
+
+    border:1px solid var(--border-color);
+
+}
+
+.hero-search button{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    padding:0 2rem;
+
+    border-radius:0 8px 8px 0;
+
+}
+
+/* ============================================================
+   ICONS
+============================================================ */
+
+.nav-icons{
+
+    display:flex;
+
+    gap:1rem;
+
+}
+
+.nav-icons a{
+
+    font-size:1.2rem;
+
+}
+
+.nav-icons a:hover{
+
+    color:var(--primary-color);
+
+}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.btn{
+
+    display:inline-block;
+
+    padding:.9rem 1.8rem;
+
+    border-radius:var(--radius-md);
+
+    transition:var(--transition-normal);
+
+    font-weight:600;
+
+}
+
+.btn-primary{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-hover);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.hero{
+
+    background:url("../images/hero/hero-banner.jpg") center/cover;
+
+    position:relative;
+
+    color:white;
+
+    min-height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:3.5rem;
+
+    margin:1rem 0;
+
+}
+
+.hero p{
+
+    color:#eee;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:var(--primary-color);
+
+    padding:.5rem 1rem;
+
+    border-radius:50px;
+
+}
+
+/* ============================================================
+   CATEGORY CARD
+============================================================ */
+
+.category-card{
+
+    background:var(--surface-color);
+
+    padding:2rem;
+
+    text-align:center;
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.category-card i{
+
+    font-size:2rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:1rem;
+
+}
+
+/* ============================================================
+   PRODUCT CARD
+============================================================ */
+
+.product-card{
+
+    background:var(--surface-color);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.product-image img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.product-info{
+
+    padding:1.5rem;
+
+}
+
+.product-brand{
+
+    color:var(--primary-color);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+.product-price{
+
+    font-size:1.35rem;
+
+    color:var(--primary-color);
+
+    font-weight:bold;
+
+    margin:1rem 0;
+
+}
+
+/* ============================================================
+   WHY US
+============================================================ */
+
+.why-card{
+
+    text-align:center;
+
+    padding:2rem;
+
+}
+
+.why-card i{
+
+    font-size:2.4rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:1rem;
+
+}
+
+/* ============================================================
+   GUIDES
+============================================================ */
+
+.guide-card{
+
+    background:var(--surface-color);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.guide-content{
+
+    padding:1.5rem;
+
+}
+
+.guide-content a{
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.footer{
+
+    background:#1F1F1F;
+
+    color:white;
+
+    padding:4rem 0 1rem;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+}
+
+.footer h3{
+
+    color:white;
+
+    margin-bottom:1rem;
+
+}
+
+.footer p{
+
+    color:#d6d6d6;
+
+}
+
+.footer ul li{
+
+    margin-bottom:.75rem;
+
+}
+
+.footer a{
+
+    color:#d6d6d6;
+
+}
+
+.footer a:hover{
+
+    color:white;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    gap:1rem;
+
+    font-size:1.25rem;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid #444;
+
+    margin-top:3rem;
+
+    padding-top:1rem;
+
+    text-align:center;
+
+}
+
+/* ============================================================
+   BREADCRUMB
+============================================================ */
+
+.breadcrumb{
+
+    background: var(--surface-color);
+
+    border-bottom: 1px solid var(--border-color);
+
+    padding: 1rem 0;
+
+}
+
+.breadcrumb .container{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: .75rem;
+
+    font-size: .95rem;
+
+}
+
+.breadcrumb a{
+
+    color: var(--text-light);
+
+    transition: var(--transition-fast);
+
+}
+
+.breadcrumb a:hover{
+
+    color: var(--primary-color);
+
+}
+
+.breadcrumb i{
+
+    color: var(--text-light);
+
+    font-size: .75rem;
+
+}
+
+#breadcrumbProduct{
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+}

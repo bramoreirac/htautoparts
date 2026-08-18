@@ -1,0 +1,354 @@
+/* ============================================================
+   HTAutoParts
+   CATALOG.CSS
+   Styles specific to catalog.html
+============================================================ */
+
+
+/* ============================================================
+   CATALOG HERO
+============================================================ */
+
+.catalog-hero{
+
+    position: relative;
+
+    background: url("../images/hero/hero-banner.jpg")
+                center center / cover no-repeat;
+
+    min-height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.catalog-hero-content{
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+}
+
+.catalog-hero h1{
+
+    color: var(--white);
+
+    font-size: var(--fs-3xl);
+
+    margin-bottom: 1rem;
+
+}
+
+.catalog-hero p{
+
+    color: #f2f2f2;
+
+    max-width: 650px;
+
+    margin: auto;
+
+}
+
+
+/* ============================================================
+   SEARCH BAR
+============================================================ */
+
+.catalog-search{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+
+}
+
+.catalog-search input{
+
+    flex: 1;
+
+    max-width: 700px;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    background: var(--white);
+
+}
+
+
+/* ============================================================
+   MAIN LAYOUT
+============================================================ */
+
+.catalog-layout{
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 2rem;
+
+    align-items: start;
+
+}
+
+
+/* ============================================================
+   SIDEBAR
+============================================================ */
+
+.catalog-sidebar{
+
+    position: sticky;
+
+    top: 100px;
+
+}
+
+
+/* ============================================================
+   FILTER BOX
+============================================================ */
+
+.filter-box{
+
+    background: var(--surface-color);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    padding: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.filter-box h3{
+
+    margin-bottom: 1rem;
+
+    color: var(--primary-color);
+
+    font-size: var(--fs-lg);
+
+}
+
+.filter-box label{
+
+    display: block;
+
+    margin-bottom: .85rem;
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+
+}
+
+.filter-box label:hover{
+
+    color: var(--primary-color);
+
+}
+
+.filter-box input{
+
+    margin-right: .5rem;
+
+}
+
+
+/* ============================================================
+   PRODUCT AREA
+============================================================ */
+
+.catalog-products{
+
+    width: 100%;
+
+}
+
+.catalog-info{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+}
+
+.catalog-info h2{
+
+    margin: 0;
+
+}
+
+.catalog-info p{
+
+    margin: 0;
+
+}
+
+
+/* ============================================================
+   PRODUCT GRID
+============================================================ */
+
+.products-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2rem;
+
+}
+
+
+/* ============================================================
+   PRODUCT CARD IMPROVEMENTS
+============================================================ */
+
+.product-card{
+
+    transition: var(--transition-normal);
+
+    cursor: pointer;
+
+}
+
+.product-card:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.product-image{
+
+    overflow: hidden;
+
+}
+
+.product-image img{
+
+    transition: .35s ease;
+
+}
+
+.product-card:hover img{
+
+    transform: scale(1.06);
+
+}
+
+.product-info{
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+.product-brand{
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: .80rem;
+
+}
+
+.product-info h3{
+
+    margin: .75rem 0;
+
+    min-height: 56px;
+
+}
+
+.product-price{
+
+    margin-top: auto;
+
+    margin-bottom: 1.25rem;
+
+}
+
+.product-info .btn{
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+
+/* ============================================================
+   FILTER TRANSITIONS
+============================================================ */
+
+.filter-box{
+
+    transition: var(--transition-normal);
+
+}
+
+.filter-box:hover{
+
+    box-shadow: var(--shadow-md);
+
+}
+
+
+/* ============================================================
+   PRODUCT HOVER
+============================================================ */
+
+.product-card{
+
+    animation: fadeCatalog .7s ease;
+
+}
+
+@keyframes fadeCatalog{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

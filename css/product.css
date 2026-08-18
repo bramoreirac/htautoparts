@@ -1,0 +1,336 @@
+/* ============================================================
+   HTAutoParts
+   PRODUCT.CSS
+   Styles specific to product.html
+============================================================ */
+
+
+/* ============================================================
+   PRODUCT SECTION
+============================================================ */
+
+.product-section{
+
+    padding: 4rem 0;
+
+}
+
+.product-layout{
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    gap: 3rem;
+
+    align-items: start;
+
+}
+
+
+/* ============================================================
+   PRODUCT IMAGE
+============================================================ */
+
+.product-gallery{
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    padding: 2rem;
+
+}
+
+.product-gallery img{
+
+    width: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+}
+
+
+/* ============================================================
+   PRODUCT DETAILS
+============================================================ */
+
+.product-details{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.product-brand{
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+.product-details h2{
+
+    margin: .75rem 0;
+
+    font-size: var(--fs-3xl);
+
+}
+
+.product-rating{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .35rem;
+
+    margin-bottom: 1.25rem;
+
+}
+
+.product-rating i{
+
+    color: #ffc107;
+
+}
+
+.product-price{
+
+    font-size: 2rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+
+}
+
+.stock-status{
+
+    color: #2e7d32;
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+
+}
+
+.stock-status i{
+
+    margin-right: .4rem;
+
+}
+
+.compatibility{
+
+    margin-bottom: 2rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* ============================================================
+   QUANTITY
+============================================================ */
+
+.quantity-selector{
+
+    margin-bottom: 2rem;
+
+}
+
+.quantity-selector label{
+
+    display: block;
+
+    margin-bottom: .75rem;
+
+    font-weight: 600;
+
+}
+
+.quantity-box{
+
+    display: flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+}
+
+.quantity-box button{
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    background: var(--surface-color);
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+
+    transition: var(--transition-fast);
+
+}
+
+.quantity-box button:hover{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+}
+
+.quantity-box input{
+
+    width: 60px;
+
+    text-align: center;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 1rem;
+
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.product-buttons{
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.product-buttons .btn{
+
+    flex: 1;
+
+    justify-content: center;
+
+}
+
+
+/* ============================================================
+   DESCRIPTION
+============================================================ */
+
+.product-description-section{
+
+    padding: 4rem 0;
+
+}
+
+.description-content{
+
+    background: var(--surface-color);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    line-height: 1.8;
+
+}
+
+.description-content p{
+
+    margin-bottom: 1.25rem;
+
+}
+
+
+/* ============================================================
+   SPECIFICATIONS
+============================================================ */
+
+.product-specifications{
+
+    padding-bottom: 5rem;
+
+}
+
+.specifications-table{
+
+    overflow-x: auto;
+
+}
+
+.specifications-table table{
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--white);
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.specifications-table th{
+
+    width: 35%;
+
+    background: var(--surface-color);
+
+    text-align: left;
+
+    padding: 1rem;
+
+    font-weight: 600;
+
+}
+
+.specifications-table td{
+
+    padding: 1rem;
+
+}
+
+.specifications-table tr{
+
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+.specifications-table tr:last-child{
+
+    border-bottom: none;
+
+}

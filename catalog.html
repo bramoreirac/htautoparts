@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================================= -->
+    <!--                     META INFORMATION                      -->
+    <!-- ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catalog | HTAutoParts</title>
+
+    <meta name="description" content="Browse Honda and Toyota OEM and aftermarket auto parts.">
+
+    <!-- ========================================================= -->
+    <!--                       GOOGLE FONTS                        -->
+    <!-- ========================================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================================= -->
+    <!--                     FONT AWESOME                          -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================================= -->
+    <!--                       CSS FILES                           -->
+    <!-- ========================================================= -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================================= -->
+    <!--                         HEADER                             -->
+    <!-- ========================================================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <span>HTAutoParts</span>
+
+            </a>
+
+            <nav class="navigation">
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a class="active" href="catalog.html">Catalog</a></li>
+
+                    <li><a href="#">Compatibility</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-search">
+
+                <input type="text" placeholder="Search parts...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-icons">
+
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ========================================================= -->
+    <!--                    CATALOG HERO                            -->
+    <!-- ========================================================= -->
+
+    <section class="catalog-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container catalog-hero-content">
+
+            <h1>Product Catalog</h1>
+
+            <p>
+
+                Find the right auto parts for your Honda or Toyota vehicle.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                     BREADCRUMB                            -->
+    <!-- ========================================================= -->
+
+    <nav class="breadcrumb">
+
+        <div class="container">
+
+            <a href="index.html">
+
+                Home
+
+            </a>
+
+            <span>
+
+                <i class="fas fa-chevron-right"></i>
+
+            </span>
+
+            <span>
+
+                Catalog
+
+            </span>
+
+        </div>
+
+    </nav>
+
+    <!-- ========================================================= -->
+    <!--                  SEARCH & FILTERS                          -->
+    <!-- ========================================================= -->
+
+    <section class="catalog-section">
+
+        <div class="container">
+
+            <!-- Search -->
+
+            <div class="catalog-search">
+
+                <input type="text" id="catalogSearch" placeholder="Search by part name, OEM number or category...">
+
+                <button class="btn btn-primary">
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <!-- Main Layout -->
+
+            <div class="catalog-layout">
+
+                <!-- ========================= -->
+                <!--      SIDEBAR FILTERS      -->
+                <!-- ========================= -->
+
+                <aside class="catalog-sidebar">
+
+                    <!-- Brand -->
+
+                    <div class="filter-box">
+
+                        <h3>Brand</h3>
+
+                        <label>
+
+                            <input type="radio" name="brand" checked>
+
+                            All Brands
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" name="brand">
+
+                            Honda
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" name="brand">
+
+                            Toyota
+
+                        </label>
+
+                    </div>
+
+                    <!-- Categories -->
+
+                    <div class="filter-box">
+
+                        <h3>Categories</h3>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Engine Parts
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Brake System
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Suspension
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Filters
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Electrical
+
+                        </label>
+
+                        <label>
+
+                            <input type="checkbox">
+
+                            Cooling System
+
+                        </label>
+
+                    </div>
+
+                    <!-- Price -->
+
+                    <div class="filter-box">
+
+                        <h3>Price Range</h3>
+
+                        <label>
+
+                            <input type="radio" name="price">
+
+                            Under $50
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" name="price">
+
+                            $50 - $100
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" name="price">
+
+                            $100 - $200
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio" name="price">
+
+                            Over $200
+
+                        </label>
+
+                    </div>
+
+                </aside>
+
+                <!-- ========================= -->
+                <!--     PRODUCT GRID START    -->
+                <!-- ========================= -->
+
+                <main class="catalog-products">
+
+                    <div class="catalog-info">
+
+                        <h2>Available Products</h2>
+
+                        <p>
+
+                            Showing 12 products
+
+                        </p>
+
+                    </div>
+
+                    <div class="products-grid grid-3">
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 1                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Brakes">
+
+                            <div class="product-image">
+
+                                <img src="images/products/brake-pad.jpg" alt="Honda Front Brake Pads">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Front Brake Pads</h3>
+
+                                <p class="product-price">$84.99</p>
+
+                                <a href="product.html?id=BP001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 2                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Brakes">
+
+                            <div class="product-image">
+
+                                <img src="images/products/rear-brake-pad.jpg" alt="Toyota Rear Brake Pads">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Rear Brake Pads</h3>
+
+                                <p class="product-price">$79.99</p>
+
+                                <a href="product.html?id=BP002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 3                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Filters">
+
+                            <div class="product-image">
+
+                                <img src="images/products/oil-filter.jpg" alt="Honda Oil Filter">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Premium Oil Filter</h3>
+
+                                <p class="product-price">$14.99</p>
+
+                                <a href="product.html?id=OF001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 4                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Filters">
+
+                            <div class="product-image">
+
+                                <img src="images/products/air-filter.jpg" alt="Toyota Air Filter">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>High Flow Air Filter</h3>
+
+                                <p class="product-price">$27.50</p>
+
+                                <a href="product.html?id=AF002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 5                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Engine">
+
+                            <div class="product-image">
+
+                                <img src="images/products/spark-plug.jpg" alt="Honda Spark Plugs">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Iridium Spark Plugs</h3>
+
+                                <p class="product-price">$39.99</p>
+
+                                <a href="product.html?id=SP001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 6                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Suspension">
+
+                            <div class="product-image">
+
+                                <img src="images/products/shock-absorber.jpg" alt="Toyota Shock Absorber">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Front Shock Absorber</h3>
+
+                                <p class="product-price">$119.99</p>
+
+                                <a href="product.html?id=SA002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 7                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Engine">
+
+                            <div class="product-image">
+
+                                <img src="images/products/fuel-pump.jpg" alt="Honda Fuel Pump">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Fuel Pump Assembly</h3>
+
+                                <p class="product-price">$189.99</p>
+
+                                <a href="product.html?id=FP001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 8                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Electrical">
+
+                            <div class="product-image">
+
+                                <img src="images/products/alternator.jpg" alt="Toyota Alternator">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Alternator Assembly</h3>
+
+                                <p class="product-price">$245.99</p>
+
+                                <a href="product.html?id=AL002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 9                             -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Engine">
+
+                            <div class="product-image">
+
+                                <img src="images/products/timing-belt.jpg" alt="Honda Timing Belt Kit">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Timing Belt Kit</h3>
+
+                                <p class="product-price">$154.99</p>
+
+                                <a href="product.html?id=TB001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 10                            -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Filters">
+
+                            <div class="product-image">
+
+                                <img src="images/products/cabin-filter.jpg" alt="Toyota Cabin Air Filter">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Cabin Air Filter</h3>
+
+                                <p class="product-price">$18.99</p>
+
+                                <a href="product.html?id=CF002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 11                            -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Honda" data-category="Cooling">
+
+                            <div class="product-image">
+
+                                <img src="images/products/radiator-hose.jpg" alt="Honda Radiator Hose">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Honda</span>
+
+                                <h3>Radiator Hose</h3>
+
+                                <p class="product-price">$22.99</p>
+
+                                <a href="product.html?id=RH001" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 12                            -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Suspension">
+
+                            <div class="product-image">
+
+                                <img src="images/products/control-arm.jpg" alt="Toyota Control Arm">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Front Control Arm</h3>
+
+                                <p class="product-price">$129.99</p>
+
+                                <a href="product.html?id=CA002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!--                         FOOTER                            -->
+    <!-- ========================================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Company Information -->
+
+            <div class="footer-column">
+
+                <h3>HTAutoParts</h3>
+
+                <p>
+
+                    Your trusted source for premium Honda and Toyota auto parts.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="catalog.html">Catalog</a></li>
+
+                    <li><a href="cart.html">Shopping Cart</a></li>
+
+                    <li><a href="checkout.html">Checkout</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Customer Support -->
+
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Products</a></li>
+
+                    <li><a href="#">Support</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social Media -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 HTAutoParts. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================================================= -->
+    <!--                      JAVASCRIPT                           -->
+    <!-- ========================================================= -->
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
