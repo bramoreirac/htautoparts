@@ -50,6 +50,32 @@ function loadProduct(){
 
     renderProduct(product);
 
+    initializeAddToCart(product);
+
+}
+
+function initializeAddToCart(product){
+
+    const button = document.getElementById("addToCart");
+
+    if(!button) return;
+
+    button.addEventListener("click", () => {
+
+        const amount = Math.max(1, Number.parseInt(quantityInput.value, 10) || 1);
+
+        addToCart(product.id, amount);
+
+        button.innerHTML = '<i class="fas fa-check"></i> Added to Cart';
+
+        setTimeout(() => {
+
+            button.innerHTML = '<i class="fas fa-cart-shopping"></i> Add to Cart';
+
+        }, 1400);
+
+    });
+
 }
 
 /* ==========================================================

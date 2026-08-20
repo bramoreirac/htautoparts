@@ -204,7 +204,7 @@
 
                         <label>
 
-                            <input type="radio" name="brand" checked>
+                            <input type="radio" name="brand" value="all" checked>
 
                             All Brands
 
@@ -212,7 +212,7 @@
 
                         <label>
 
-                            <input type="radio" name="brand">
+                            <input type="radio" name="brand" value="Honda">
 
                             Honda
 
@@ -220,7 +220,7 @@
 
                         <label>
 
-                            <input type="radio" name="brand">
+                            <input type="radio" name="brand" value="Toyota">
 
                             Toyota
 
@@ -336,9 +336,9 @@
 
                         <h2>Available Products</h2>
 
-                        <p>
+                        <p id="catalogProductCount">
 
-                            Showing 12 products
+                            Showing 14 products
 
                         </p>
 
@@ -406,17 +406,17 @@
                         <!--                     PRODUCT 3                             -->
                         <!-- ========================================================= -->
 
-                        <article class="product-card" data-brand="Honda" data-category="Filters">
+                        <article class="product-card" data-brand="Toyota" data-category="Filters">
 
                             <div class="product-image">
 
-                                <img src="images/products/oil-filter.jpg" alt="Honda Oil Filter">
+                                <img src="images/products/oil-filter.jpg" alt="Toyota Oil Filter">
 
                             </div>
 
                             <div class="product-info">
 
-                                <span class="product-brand">Honda</span>
+                                <span class="product-brand">Toyota</span>
 
                                 <h3>Premium Oil Filter</h3>
 
@@ -682,6 +682,62 @@
 
                         </article>
 
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 13                            -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Ignition">
+
+                            <div class="product-image">
+
+                                <img src="images/products/spark-plug.jpg" alt="Toyota Iridium Spark Plug">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Iridium Spark Plug</h3>
+
+                                <p class="product-price">$12.49</p>
+
+                                <a href="product.html?id=SP002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- ========================================================= -->
+                        <!--                     PRODUCT 14                            -->
+                        <!-- ========================================================= -->
+
+                        <article class="product-card" data-brand="Toyota" data-category="Visibility">
+
+                            <div class="product-image">
+
+                                <img src="images/products/wiper-blades.jpg" alt="Toyota Windshield Wiper Blades">
+
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="product-brand">Toyota</span>
+
+                                <h3>Windshield Wiper Blades</h3>
+
+                                <p class="product-price">$19.99</p>
+
+                                <a href="product.html?id=WB002" class="btn btn-primary">
+                                    View Details
+                                </a>
+
+                            </div>
+
+                        </article>
+
                     </div>
 
                 </main>
@@ -797,6 +853,7 @@
     <!-- ========================================================= -->
 
     <script src="js/products.js"></script>
+    <script src="js/catalog.js"></script>
     <script src="js/app.js"></script>
 
 </body>

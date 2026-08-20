@@ -267,7 +267,7 @@
 
     flex-direction: column;
 
-    height: 100%;
+    height: auto;
 
 }
 
@@ -291,7 +291,7 @@
 
 .product-price{
 
-    margin-top: auto;
+    margin-top: 1rem;
 
     margin-bottom: 1.25rem;
 

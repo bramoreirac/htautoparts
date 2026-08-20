@@ -51,7 +51,7 @@ const PRODUCTS = [
     {
         id: "OF001",
 
-        brand: "Honda",
+        brand: "Toyota",
 
         category: "Engine",
 
@@ -135,9 +135,9 @@ const PRODUCTS = [
 
         sku: "AF-002",
 
-        name: "Engine Air Filter",
+        name: "High Flow Air Filter",
 
-        price: 22.99,
+        price: 27.50,
 
         stock: 36,
 
