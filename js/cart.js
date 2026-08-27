@@ -147,9 +147,9 @@ function renderCart(){
             <td>${formatCurrency(product.price)}</td>
             <td>
                 <div class="quantity-box">
-                    <button type="button" data-action="decrease" data-product-id="${product.id}">−</button>
                     <input type="number" value="${quantity}" min="1" data-product-id="${product.id}">
-                    <button type="button" data-action="increase" data-product-id="${product.id}">+</button>
+                    <button type="button" data-action="increase" data-product-id="${product.id}" aria-label="Increase quantity">+</button>
+                    <button type="button" data-action="decrease" data-product-id="${product.id}" aria-label="Decrease quantity">−</button>
                 </div>
             </td>
             <td>${formatCurrency(product.price * quantity)}</td>

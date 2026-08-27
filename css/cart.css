@@ -309,3 +309,75 @@
     }
 
 }
+
+/* ============================================================
+   QUANTITY STEPPER
+============================================================ */
+
+.cart-table .quantity-box{
+
+    display: grid;
+
+    grid-template-columns: 60px 32px;
+
+    grid-template-rows: repeat(2, 22px);
+
+    width: fit-content;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+}
+
+.cart-table .quantity-box input{
+
+    grid-row: 1 / 3;
+
+    width: 60px;
+
+    border: none;
+
+    border-right: 1px solid var(--border-color);
+
+    outline: none;
+
+    text-align: center;
+
+    font: inherit;
+
+}
+
+.cart-table .quantity-box button{
+
+    width: 32px;
+
+    height: 22px;
+
+    border: none;
+
+    background: var(--surface-color);
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    transition: var(--transition-fast);
+
+}
+
+.cart-table .quantity-box button:first-of-type{
+
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+.cart-table .quantity-box button:hover{
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+}
