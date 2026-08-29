@@ -6,7 +6,7 @@
 
 const CART_STORAGE_KEY = "htautoparts-cart";
 const SHIPPING_COST = 15;
-const TAX_RATE = 0.10;
+const TAX_RATE = 0.08;
 
 function getCart(){
 
@@ -205,6 +205,7 @@ function updateCartSummary(){
 
     setElementText("itemCount", totals.itemCount);
     setElementText("subtotal", formatCurrency(totals.subtotal));
+    setElementText("estimatedTax", formatCurrency(totals.tax));
     setElementText("grandTotal", formatCurrency(totals.total));
 
 }
