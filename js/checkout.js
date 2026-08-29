@@ -25,6 +25,7 @@ function renderCheckoutSummary(){
         container.innerHTML = "<p>Your cart is empty.</p>";
         setCheckoutText("checkoutItems", "0");
         setCheckoutText("checkoutSubtotal", "$0.00");
+        setCheckoutText("checkoutTax", "$0.00");
         setCheckoutText("checkoutTotal", "$0.00");
         return;
 
@@ -44,6 +45,7 @@ function renderCheckoutSummary(){
 
     setCheckoutText("checkoutItems", totals.itemCount);
     setCheckoutText("checkoutSubtotal", formatCurrency(totals.subtotal));
+    setCheckoutText("checkoutTax", formatCurrency(totals.tax));
     setCheckoutText("checkoutTotal", formatCurrency(totals.total));
 
 }
