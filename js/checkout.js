@@ -6,8 +6,9 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    renderCheckoutSummary();
     initializeCheckoutForm();
+    productsReady.then(renderCheckoutSummary)
+        .catch(error => console.error("Unable to load checkout products:", error));
 
 });
 

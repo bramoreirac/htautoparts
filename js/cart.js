@@ -232,7 +232,9 @@ function updateCartCount(){
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    renderCart();
-    updateCartCount();
+    productsReady.then(() => {
+        renderCart();
+        updateCartCount();
+    }).catch(error => console.error("Unable to load cart products:", error));
 
 });

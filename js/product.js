@@ -4,9 +4,14 @@
    Product Details Page
 ========================================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
 
-    loadProduct();
+    try {
+        await productsReady;
+        loadProduct();
+    } catch (error) {
+        console.error("Unable to load product data:", error);
+    }
 
 });
 
