@@ -584,3 +584,25 @@
     font-weight: 600;
 
 }
+
+.btn-action{
+
+    background:var(--action-accent);
+
+    color:var(--white);
+
+}
+
+.btn-action:hover{
+
+    background:var(--action-accent-hover);
+
+}
+
+.sale-badge{
+
+    background:var(--action-accent);
+
+    color:var(--white);
+
+}

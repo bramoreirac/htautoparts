@@ -12,33 +12,41 @@
 
     /* Primary Brand Colors */
 
-    --primary-color: #B55D34;
-    --primary-hover: #964623;
+    --primary-color: #C62828;
+    --primary-hover: #991F1F;
+    --action-accent: #D32F2F;
+    --action-accent-hover: #A92323;
 
     /* Background Colors */
 
-    --background-color: #F4EFE6;
-    --surface-color: #FFFDF8;
+    --background-color: #EEF1F3;
+    --surface-color: #FFFFFF;
 
     /* Text Colors */
 
-    --text-color: #1C160F;
-    --text-light: #6D6255;
+    --text-color: #202428;
+    --text-light: #687078;
 
     /* Borders */
 
-    --border-color: #DBD1C4;
+    --border-color: #C7CDD1;
 
     /* Status Colors */
 
     --success-color: #2E8B57;
     --warning-color: #E0A800;
-    --danger-color: #C0392B;
+    --danger-color: var(--primary-color);
 
     /* Neutral Colors */
 
     --white: #FFFFFF;
     --black: #000000;
+
+    /* Automotive metallic neutrals */
+
+    --metal-dark: #343A40;
+    --metal-color: #6C757D;
+    --metal-light: #D9DEE2;
 
     /* =======================================================
        TYPOGRAPHY

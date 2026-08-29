@@ -260,6 +260,17 @@
 
     padding: 4rem 0;
 
+    background:var(--metal-dark);
+
+}
+
+.product-description-section .section-title h2,
+.product-description-section .section-title p,
+.product-specifications .section-title h2,
+.product-specifications .section-title p{
+
+    color:var(--white);
+
 }
 
 .description-content{
@@ -290,6 +301,8 @@
 .product-specifications{
 
     padding-bottom: 5rem;
+
+    background:var(--metal-dark);
 
 }
 
