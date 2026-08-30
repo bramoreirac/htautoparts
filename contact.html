@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HTAutoParts</title>
+    <meta name="description" content="Contact HTAutoParts for help finding the right Honda or Toyota auto parts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-car-side"></i><span>HTAutoParts</span></a>
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="#">Compatibility</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-search">
+                <input type="text" placeholder="Search parts...">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="nav-icons">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Our parts specialists are ready to help you find the right fit.</p>
+        </div>
+    </section>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a><span><i class="fas fa-chevron-right"></i></span><span>Contact</span>
+        </div>
+    </nav>
+
+    <main class="contact-section">
+        <div class="container contact-layout">
+            <section class="contact-info">
+                <div class="section-title contact-title">
+                    <h2>How Can We Help?</h2>
+                    <p>Have a question about compatibility, availability, or your order? Send us a message.</p>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-detail"><i class="fa-solid fa-location-dot"></i><div><h3>Visit Us</h3><p>Managua, Nicaragua</p></div></div>
+                    <div class="contact-detail"><i class="fa-solid fa-phone"></i><div><h3>Call Us</h3><p>+505 2255-0100</p></div></div>
+                    <div class="contact-detail"><i class="fa-solid fa-envelope"></i><div><h3>Email Us</h3><p>support@htautoparts.com</p></div></div>
+                    <div class="contact-detail"><i class="fa-solid fa-clock"></i><div><h3>Opening Hours</h3><p>Monday–Saturday, 8:00 AM–5:00 PM</p></div></div>
+                </div>
+            </section>
+
+            <section class="contact-form-card">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group"><label for="contactName">Name</label><input id="contactName" name="name" type="text" placeholder="Your name" required></div>
+                        <div class="form-group"><label for="contactEmail">Email</label><input id="contactEmail" name="email" type="email" placeholder="you@example.com" required></div>
+                    </div>
+                    <div class="form-group"><label for="contactSubject">Subject</label><input id="contactSubject" name="subject" type="text" placeholder="How can we help?" required></div>
+                    <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" placeholder="Tell us what you need..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p id="contactStatus" class="contact-status" role="status"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-column"><h3>HTAutoParts</h3><p>Your trusted source for premium Honda and Toyota auto parts.</p></div>
+            <div class="footer-column"><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="catalog.html">Catalog</a></li><li><a href="cart.html">Shopping Cart</a></li><li><a href="checkout.html">Checkout</a></li></ul></div>
+            <div class="footer-column"><h3>Support</h3><ul><li><a href="contact.html">Contact</a></li><li><a href="#">About Us</a></li><li><a href="#">Compatibility</a></li></ul></div>
+            <div class="footer-column"><h3>Follow Us</h3><div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a></div></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 HTAutoParts. All Rights Reserved.</p></div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

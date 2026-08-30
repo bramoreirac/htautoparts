@@ -11,46 +11,257 @@
     "manufacturer": "Honda Genuine Parts",
     "material": "Ceramic Composite",
     "warranty": "12 Months",
-    "compatibility": ["Honda Civic", "Honda Accord", "Honda CR-V"],
+    "compatibility": [
+      "Honda Civic",
+      "Honda Accord",
+      "Honda CR-V"
+    ],
     "description": "High-quality ceramic brake pads engineered for superior stopping power, reduced brake dust, and extended service life."
   },
   {
-    "id": "OF001", "brand": "Honda", "category": "Filters", "sku": "OF-001", "name": "Premium Oil Filter", "price": 14.99, "stock": 42, "image": "images/honda-oil-filter.jpg", "manufacturer": "Honda Genuine Parts", "material": "Steel / Synthetic Fiber", "warranty": "12 Months", "compatibility": ["Honda Civic", "Honda CR-V", "Honda HR-V"], "description": "Premium oil filter designed to maximize engine protection while maintaining optimal oil flow."
+    "id": "OF001",
+    "brand": "Honda",
+    "category": "Filters",
+    "sku": "OF-001",
+    "name": "Premium Oil Filter",
+    "price": 14.99,
+    "stock": 42,
+    "image": "images/honda-oil-filter.jpg",
+    "manufacturer": "Honda Genuine Parts",
+    "material": "Steel / Synthetic Fiber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Honda Civic",
+      "Honda CR-V",
+      "Honda HR-V"
+    ],
+    "description": "Premium oil filter designed to maximize engine protection while maintaining optimal oil flow."
   },
   {
-    "id": "TB001", "brand": "Honda", "category": "Engine Parts", "sku": "TB-001", "name": "Timing Belt Kit", "price": 154.99, "stock": 10, "image": "images/honda-timing-belt-kit.jpg", "manufacturer": "Honda Genuine Parts", "material": "High Strength Rubber", "warranty": "12 Months", "compatibility": ["Honda Accord", "Honda Pilot"], "description": "Complete timing belt kit including tensioner and pulleys for reliable engine synchronization."
+    "id": "TB001",
+    "brand": "Honda",
+    "category": "Engine Parts",
+    "sku": "TB-001",
+    "name": "Timing Belt Kit",
+    "price": 154.99,
+    "stock": 10,
+    "image": "images/honda-timing-belt-kit.jpg",
+    "manufacturer": "Honda Genuine Parts",
+    "material": "High Strength Rubber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Honda Accord",
+      "Honda Pilot"
+    ],
+    "description": "Complete timing belt kit including tensioner and pulleys for reliable engine synchronization."
   },
   {
-    "id": "AF002", "brand": "Toyota", "category": "Filters", "sku": "AF-002", "name": "High Flow Air Filter", "price": 27.50, "stock": 36, "image": "images/toyota-high-flow-air-filter.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Synthetic Fiber", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota RAV4", "Toyota Camry"], "description": "High-efficiency engine air filter providing excellent airflow and engine protection."
+    "id": "AF002",
+    "brand": "Toyota",
+    "category": "Filters",
+    "sku": "AF-002",
+    "name": "High Flow Air Filter",
+    "price": 27.5,
+    "stock": 36,
+    "image": "images/toyota-high-flow-air-filter.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Synthetic Fiber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota RAV4",
+      "Toyota Camry"
+    ],
+    "description": "High-efficiency engine air filter providing excellent airflow and engine protection."
   },
   {
-    "id": "SP002", "brand": "Toyota", "category": "Engine Parts", "sku": "SP-002", "name": "Iridium Spark Plug", "price": 12.49, "stock": 80, "image": "images/toyota-iridium-spark-plug.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Iridium", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota Yaris", "Toyota Prius"], "description": "Long-life iridium spark plug for smoother ignition, improved fuel economy, and better engine performance."
+    "id": "SP002",
+    "brand": "Toyota",
+    "category": "Engine Parts",
+    "sku": "SP-002",
+    "name": "Iridium Spark Plug",
+    "price": 12.49,
+    "stock": 80,
+    "image": "images/toyota-iridium-spark-plug.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Iridium",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Yaris",
+      "Toyota Prius"
+    ],
+    "description": "Long-life iridium spark plug for smoother ignition, improved fuel economy, and better engine performance."
   },
   {
-    "id": "WB002", "brand": "Toyota", "category": "Visibility", "sku": "WB-002", "name": "Windshield Wiper Blades", "price": 19.99, "stock": 54, "image": "images/toyota-windshield-wiper.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Natural Rubber", "warranty": "6 Months", "compatibility": ["Toyota Corolla", "Toyota Camry", "Toyota Hilux"], "description": "Durable windshield wiper blades engineered for quiet operation and streak-free visibility."
+    "id": "WB002",
+    "brand": "Toyota",
+    "category": "Visibility",
+    "sku": "WB-002",
+    "name": "Windshield Wiper Blades",
+    "price": 19.99,
+    "stock": 54,
+    "image": "images/toyota-windshield-wiper.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Natural Rubber",
+    "warranty": "6 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Camry",
+      "Toyota Hilux"
+    ],
+    "description": "Durable windshield wiper blades engineered for quiet operation and streak-free visibility."
   },
   {
-    "id": "BP002", "brand": "Toyota", "category": "Brake System", "sku": "BP-002", "name": "Rear Brake Pads", "price": 79.99, "stock": 24, "image": "images/toyota-rear-brake-pads.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Ceramic Composite", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota Camry", "Toyota RAV4"], "description": "Reliable rear brake pads designed for quiet braking, consistent stopping power, and long service life."
+    "id": "BP002",
+    "brand": "Toyota",
+    "category": "Brake System",
+    "sku": "BP-002",
+    "name": "Rear Brake Pads",
+    "price": 79.99,
+    "stock": 24,
+    "image": "images/toyota-rear-brake-pads.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Ceramic Composite",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Camry",
+      "Toyota RAV4"
+    ],
+    "description": "Reliable rear brake pads designed for quiet braking, consistent stopping power, and long service life."
   },
   {
-    "id": "SP001", "brand": "Honda", "category": "Engine Parts", "sku": "SP-001", "name": "Iridium Spark Plugs", "price": 39.99, "stock": 76, "image": "images/honda-iridium-spark-plug.jpg", "manufacturer": "Honda Genuine Parts", "material": "Iridium", "warranty": "12 Months", "compatibility": ["Honda Civic", "Honda Accord", "Honda Fit"], "description": "High-performance iridium spark plugs engineered for reliable starts, smooth engine operation, and improved fuel efficiency."
+    "id": "SP001",
+    "brand": "Honda",
+    "category": "Engine Parts",
+    "sku": "SP-001",
+    "name": "Iridium Spark Plugs",
+    "price": 39.99,
+    "stock": 76,
+    "image": "images/honda-iridium-spark-plug.jpg",
+    "manufacturer": "Honda Genuine Parts",
+    "material": "Iridium",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Honda Civic",
+      "Honda Accord",
+      "Honda Fit"
+    ],
+    "description": "High-performance iridium spark plugs engineered for reliable starts, smooth engine operation, and improved fuel efficiency."
   },
   {
-    "id": "SA002", "brand": "Toyota", "category": "Suspension", "sku": "SA-002", "name": "Front Shock Absorber", "price": 119.99, "stock": 12, "image": "images/toyota-front-shock-absorber.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Steel / Rubber", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota Camry", "Toyota RAV4"], "description": "Heavy-duty front shock absorber built to improve ride comfort and maintain chassis stability over varied road conditions."
+    "id": "SA002",
+    "brand": "Toyota",
+    "category": "Suspension",
+    "sku": "SA-002",
+    "name": "Front Shock Absorber",
+    "price": 119.99,
+    "stock": 12,
+    "image": "images/toyota-front-shock-absorber.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Steel / Rubber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Camry",
+      "Toyota RAV4"
+    ],
+    "description": "Heavy-duty front shock absorber built to improve ride comfort and maintain chassis stability over varied road conditions."
   },
   {
-    "id": "FP001", "brand": "Honda", "category": "Engine Parts", "sku": "FP-001", "name": "Fuel Pump Assembly", "price": 189.99, "stock": 9, "image": "images/honda-fuel-pump-assembly.jpg", "manufacturer": "Honda Genuine Parts", "material": "Aluminum / Plastic", "warranty": "12 Months", "compatibility": ["Honda Accord", "Honda Civic", "Honda CR-V"], "description": "Complete fuel pump assembly designed to deliver consistent fuel pressure and reliable engine performance."
+    "id": "FP001",
+    "brand": "Honda",
+    "category": "Engine Parts",
+    "sku": "FP-001",
+    "name": "Fuel Pump Assembly",
+    "price": 189.99,
+    "stock": 9,
+    "image": "images/honda-fuel-pump-assembly.jpg",
+    "manufacturer": "Honda Genuine Parts",
+    "material": "Aluminum / Plastic",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Honda Accord",
+      "Honda Civic",
+      "Honda CR-V"
+    ],
+    "description": "Complete fuel pump assembly designed to deliver consistent fuel pressure and reliable engine performance."
   },
   {
-    "id": "AL002", "brand": "Toyota", "category": "Electrical", "sku": "AL-002", "name": "Alternator Assembly", "price": 245.99, "stock": 7, "image": "images/toyota-alternator-assembly.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Aluminum / Copper", "warranty": "12 Months", "compatibility": ["Toyota Camry", "Toyota Corolla", "Toyota RAV4"], "description": "Durable alternator assembly engineered to provide stable charging performance and dependable electrical system operation."
+    "id": "AL002",
+    "brand": "Toyota",
+    "category": "Electrical",
+    "sku": "AL-002",
+    "name": "Alternator Assembly",
+    "price": 245.99,
+    "stock": 7,
+    "image": "images/toyota-alternator-assembly.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Aluminum / Copper",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Camry",
+      "Toyota Corolla",
+      "Toyota RAV4"
+    ],
+    "description": "Durable alternator assembly engineered to provide stable charging performance and dependable electrical system operation."
   },
   {
-    "id": "CF002", "brand": "Toyota", "category": "Filters", "sku": "CF-002", "name": "Cabin Air Filter", "price": 18.99, "stock": 45, "image": "images/toyota-cabin-air-filter.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Synthetic Fiber", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota Camry", "Toyota RAV4"], "description": "High-efficiency cabin air filter that helps trap dust, pollen, and other airborne contaminants for cleaner interior air."
+    "id": "CF002",
+    "brand": "Toyota",
+    "category": "Filters",
+    "sku": "CF-002",
+    "name": "Cabin Air Filter",
+    "price": 18.99,
+    "stock": 45,
+    "image": "images/toyota-cabin-air-filter.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Synthetic Fiber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Camry",
+      "Toyota RAV4"
+    ],
+    "description": "High-efficiency cabin air filter that helps trap dust, pollen, and other airborne contaminants for cleaner interior air."
   },
   {
-    "id": "RH001", "brand": "Honda", "category": "Cooling System", "sku": "RH-001", "name": "Radiator Hose", "price": 22.99, "stock": 34, "image": "images/honda-radiator-hose.jpg", "manufacturer": "Honda Genuine Parts", "material": "Reinforced Rubber", "warranty": "12 Months", "compatibility": ["Honda Civic", "Honda Accord", "Honda CR-V"], "description": "Durable radiator hose constructed to withstand heat, pressure, and daily engine cooling demands."
+    "id": "RH001",
+    "brand": "Honda",
+    "category": "Cooling System",
+    "sku": "RH-001",
+    "name": "Radiator Hose",
+    "price": 22.99,
+    "stock": 34,
+    "image": "images/honda-radiator-hose.jpg",
+    "manufacturer": "Honda Genuine Parts",
+    "material": "Reinforced Rubber",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Honda Civic",
+      "Honda Accord",
+      "Honda CR-V"
+    ],
+    "description": "Durable radiator hose constructed to withstand heat, pressure, and daily engine cooling demands."
   },
   {
-    "id": "CA002", "brand": "Toyota", "category": "Suspension", "sku": "CA-002", "name": "Front Control Arm", "price": 129.99, "stock": 15, "image": "images/toyota-front-control-arm.jpg", "manufacturer": "Toyota Genuine Parts", "material": "Forged Steel", "warranty": "12 Months", "compatibility": ["Toyota Corolla", "Toyota Camry", "Toyota RAV4"], "description": "Strong front control arm designed for precise steering response and improved suspension stability."
+    "id": "CA002",
+    "brand": "Toyota",
+    "category": "Suspension",
+    "sku": "CA-002",
+    "name": "Front Control Arm",
+    "price": 129.99,
+    "stock": 15,
+    "image": "images/toyota-front-control-arm.jpg",
+    "manufacturer": "Toyota Genuine Parts",
+    "material": "Forged Steel",
+    "warranty": "12 Months",
+    "compatibility": [
+      "Toyota Corolla",
+      "Toyota Camry",
+      "Toyota RAV4"
+    ],
+    "description": "Strong front control arm designed for precise steering response and improved suspension stability."
   }
 ]
