@@ -36,16 +36,19 @@ function initializeCatalogFilters(products, grid, count) {
     const priceRanges = [[0, 50], [50, 100], [100, 200], [200, Infinity]];
 
     categoryFilters.forEach((input, index) => input.dataset.category = categoryNames[index]);
-    priceFilters.forEach((input, index) => {
-        input.dataset.min = priceRanges[index][0];
-        input.dataset.max = priceRanges[index][1];
+    let priceRangeIndex = 0;
+    priceFilters.forEach(input => {
+        if (input.value === "none") return;
+        input.dataset.min = priceRanges[priceRangeIndex][0];
+        input.dataset.max = priceRanges[priceRangeIndex][1];
+        priceRangeIndex++;
     });
 
     function applyFilters() {
         const term = (searchInput?.value || "").trim().toLowerCase();
         const brand = document.querySelector('input[name="brand"]:checked')?.value || "all";
         const categories = [...categoryFilters].filter(input => input.checked).map(input => input.dataset.category);
-        const selectedPrice = [...priceFilters].find(input => input.checked);
+        const selectedPrice = [...priceFilters].find(input => input.checked && input.value !== "none");
         const min = selectedPrice ? Number(selectedPrice.dataset.min) : 0;
         const max = selectedPrice ? Number(selectedPrice.dataset.max) : Infinity;
         let visibleCount = 0;
