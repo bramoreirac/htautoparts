@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | HTAutoParts</title>
+    <meta name="description" content="Sign in to your HTAutoParts account.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <a class="login-skip-link" href="#main-content">Skip to sign in</a>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo"><i class="fa-solid fa-car-side" aria-hidden="true"></i><span>HTAutoParts</span></a>
+            <nav class="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="login-header-actions">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i><span>Cart</span></a>
+                <a href="login.html" aria-current="page"><i class="fa-regular fa-user" aria-hidden="true"></i><span>Sign in</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="login-main">
+        <div class="container login-layout">
+            <aside class="login-intro" aria-labelledby="login-intro-title">
+                <div class="login-intro-mark"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div>
+                <p class="login-eyebrow">HONDA &amp; TOYOTA PARTS</p>
+                <h2 id="login-intro-title">The right part starts here.</h2>
+                <p>Explore parts for the vehicles you know and get back to what moves you.</p>
+                <a class="login-browse-link" href="catalog.html">Browse the catalog <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </aside>
+
+            <section class="login-card" aria-labelledby="login-title">
+                <div class="login-card-heading">
+                    <span class="login-card-icon"><i class="fa-regular fa-user" aria-hidden="true"></i></span>
+                    <p class="login-eyebrow">YOUR ACCOUNT</p>
+                    <h1 id="login-title">Welcome back</h1>
+                    <p>Enter your details to sign in.</p>
+                </div>
+                <form id="loginForm">
+                    <div class="login-field">
+                        <label for="loginEmail">Email address</label>
+                        <input id="loginEmail" name="email" type="email" autocomplete="username" placeholder="you@example.com" required>
+                    </div>
+                    <div class="login-field">
+                        <label for="loginPassword">Password</label>
+                        <div class="login-password-wrap">
+                            <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                            <button id="togglePassword" type="button" aria-label="Show password" aria-pressed="false"><i class="fa-regular fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary login-submit" type="submit">Sign in <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    <p id="loginStatus" class="login-status" role="status" aria-live="polite"></p>
+                </form>
+                <div class="login-card-bottom">
+                    <p>Need help with your account? <a href="contact.html">Contact us</a></p>
+                    <p>Just looking around? <a href="catalog.html">Continue as guest</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="login-footer">
+        <div class="container"><span>© 2026 HTAutoParts</span><a href="contact.html">Help &amp; support</a></div>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
